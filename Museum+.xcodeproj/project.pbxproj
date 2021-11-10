@@ -11,6 +11,25 @@
 		B28524D1273AB8EA008D0D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524D0273AB8EA008D0D15 /* ContentView.swift */; };
 		B28524D3273AB8EA008D0D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28524D2273AB8EA008D0D15 /* Assets.xcassets */; };
 		B28524D6273AB8EA008D0D15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28524D5273AB8EA008D0D15 /* Preview Assets.xcassets */; };
+		B28524E4273ABA64008D0D15 /* Home_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524E3273ABA64008D0D15 /* Home_1.swift */; };
+		B28524E6273ABA6A008D0D15 /* Home_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524E5273ABA6A008D0D15 /* Home_2.swift */; };
+		B28524E8273ABA7A008D0D15 /* MuseumList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524E7273ABA7A008D0D15 /* MuseumList.swift */; };
+		B28524EA273ABA84008D0D15 /* MuseumDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524E9273ABA84008D0D15 /* MuseumDetail.swift */; };
+		B28524ED273AC02B008D0D15 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524EC273AC02B008D0D15 /* Settings.swift */; };
+		B28524EF273AC03D008D0D15 /* Bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524EE273AC03D008D0D15 /* Bookings.swift */; };
+		B28524F4273AC3B3008D0D15 /* Museum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524F3273AC3B3008D0D15 /* Museum.swift */; };
+		B28524F6273AE622008D0D15 /* AudioNarration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524F5273AE622008D0D15 /* AudioNarration.swift */; };
+		B28524F8273AE6CB008D0D15 /* MuseumMap_RoutePlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524F7273AE6CB008D0D15 /* MuseumMap_RoutePlanning.swift */; };
+		B28524FA273AE856008D0D15 /* StampCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524F9273AE856008D0D15 /* StampCard.swift */; };
+		B28524FC273AE897008D0D15 /* RealtimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524FB273AE897008D0D15 /* RealtimeData.swift */; };
+		B28524FE273AE8B4008D0D15 /* BookingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524FD273AE8B4008D0D15 /* BookingButton.swift */; };
+		B2852500273AE8CB008D0D15 /* GeneralInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524FF273AE8CB008D0D15 /* GeneralInformation.swift */; };
+		B2852504273AF7DD008D0D15 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2852503273AF7DD008D0D15 /* ButtonsView.swift */; };
+		B2852506273AF8A2008D0D15 /* MuseumMap_Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2852505273AF8A2008D0D15 /* MuseumMap_Navigation.swift */; };
+		B290A374273B79290068F060 /* MuseumDetail_Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A373273B79290068F060 /* MuseumDetail_Exhibition.swift */; };
+		B290A376273B7AF40068F060 /* MuseumDetail_Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A375273B7AF40068F060 /* MuseumDetail_Activity.swift */; };
+		B290A378273B7B7C0068F060 /* MuseumDetail_Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A377273B7B7C0068F060 /* MuseumDetail_Event.swift */; };
+		B290A37A273B8EE50068F060 /* CrowdLevelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A379273B8EE50068F060 /* CrowdLevelText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +38,25 @@
 		B28524D0273AB8EA008D0D15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B28524D2273AB8EA008D0D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B28524D5273AB8EA008D0D15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B28524E3273ABA64008D0D15 /* Home_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_1.swift; sourceTree = "<group>"; };
+		B28524E5273ABA6A008D0D15 /* Home_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_2.swift; sourceTree = "<group>"; };
+		B28524E7273ABA7A008D0D15 /* MuseumList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumList.swift; sourceTree = "<group>"; };
+		B28524E9273ABA84008D0D15 /* MuseumDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetail.swift; sourceTree = "<group>"; };
+		B28524EC273AC02B008D0D15 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B28524EE273AC03D008D0D15 /* Bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings.swift; sourceTree = "<group>"; };
+		B28524F3273AC3B3008D0D15 /* Museum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museum.swift; sourceTree = "<group>"; };
+		B28524F5273AE622008D0D15 /* AudioNarration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNarration.swift; sourceTree = "<group>"; };
+		B28524F7273AE6CB008D0D15 /* MuseumMap_RoutePlanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumMap_RoutePlanning.swift; sourceTree = "<group>"; };
+		B28524F9273AE856008D0D15 /* StampCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCard.swift; sourceTree = "<group>"; };
+		B28524FB273AE897008D0D15 /* RealtimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeData.swift; sourceTree = "<group>"; };
+		B28524FD273AE8B4008D0D15 /* BookingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingButton.swift; sourceTree = "<group>"; };
+		B28524FF273AE8CB008D0D15 /* GeneralInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralInformation.swift; sourceTree = "<group>"; };
+		B2852503273AF7DD008D0D15 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		B2852505273AF8A2008D0D15 /* MuseumMap_Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumMap_Navigation.swift; sourceTree = "<group>"; };
+		B290A373273B79290068F060 /* MuseumDetail_Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetail_Exhibition.swift; sourceTree = "<group>"; };
+		B290A375273B7AF40068F060 /* MuseumDetail_Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetail_Activity.swift; sourceTree = "<group>"; };
+		B290A377273B7B7C0068F060 /* MuseumDetail_Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetail_Event.swift; sourceTree = "<group>"; };
+		B290A379273B8EE50068F060 /* CrowdLevelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdLevelText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +91,8 @@
 			children = (
 				B28524CE273AB8EA008D0D15 /* Museum_App.swift */,
 				B28524D0273AB8EA008D0D15 /* ContentView.swift */,
+				B28524F0273AC38F008D0D15 /* Model */,
+				B28524DD273AB91F008D0D15 /* View */,
 				B28524D2273AB8EA008D0D15 /* Assets.xcassets */,
 				B28524D4273AB8EA008D0D15 /* Preview Content */,
 			);
@@ -65,6 +105,71 @@
 				B28524D5273AB8EA008D0D15 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B28524DD273AB91F008D0D15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B28524E1273ABA33008D0D15 /* Museums */,
+				B28524E0273AB9F7008D0D15 /* Home */,
+				B28524EE273AC03D008D0D15 /* Bookings.swift */,
+				B28524EC273AC02B008D0D15 /* Settings.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B28524E0273AB9F7008D0D15 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B28524E3273ABA64008D0D15 /* Home_1.swift */,
+				B28524E5273ABA6A008D0D15 /* Home_2.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B28524E1273ABA33008D0D15 /* Museums */ = {
+			isa = PBXGroup;
+			children = (
+				B2852503273AF7DD008D0D15 /* ButtonsView.swift */,
+				B28524EB273ABA93008D0D15 /* MuseumButton */,
+				B28524E7273ABA7A008D0D15 /* MuseumList.swift */,
+				B290A372273B790B0068F060 /* MuseumDetail */,
+				B290A379273B8EE50068F060 /* CrowdLevelText.swift */,
+			);
+			path = Museums;
+			sourceTree = "<group>";
+		};
+		B28524EB273ABA93008D0D15 /* MuseumButton */ = {
+			isa = PBXGroup;
+			children = (
+				B28524F5273AE622008D0D15 /* AudioNarration.swift */,
+				B28524F7273AE6CB008D0D15 /* MuseumMap_RoutePlanning.swift */,
+				B2852505273AF8A2008D0D15 /* MuseumMap_Navigation.swift */,
+				B28524F9273AE856008D0D15 /* StampCard.swift */,
+				B28524FB273AE897008D0D15 /* RealtimeData.swift */,
+				B28524FD273AE8B4008D0D15 /* BookingButton.swift */,
+				B28524FF273AE8CB008D0D15 /* GeneralInformation.swift */,
+			);
+			path = MuseumButton;
+			sourceTree = "<group>";
+		};
+		B28524F0273AC38F008D0D15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B28524F3273AC3B3008D0D15 /* Museum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B290A372273B790B0068F060 /* MuseumDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B28524E9273ABA84008D0D15 /* MuseumDetail.swift */,
+				B290A373273B79290068F060 /* MuseumDetail_Exhibition.swift */,
+				B290A375273B7AF40068F060 /* MuseumDetail_Activity.swift */,
+				B290A377273B7B7C0068F060 /* MuseumDetail_Event.swift */,
+			);
+			path = MuseumDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +242,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28524EA273ABA84008D0D15 /* MuseumDetail.swift in Sources */,
+				B28524FE273AE8B4008D0D15 /* BookingButton.swift in Sources */,
+				B28524F6273AE622008D0D15 /* AudioNarration.swift in Sources */,
+				B28524E4273ABA64008D0D15 /* Home_1.swift in Sources */,
+				B28524ED273AC02B008D0D15 /* Settings.swift in Sources */,
+				B28524E8273ABA7A008D0D15 /* MuseumList.swift in Sources */,
+				B2852504273AF7DD008D0D15 /* ButtonsView.swift in Sources */,
+				B2852506273AF8A2008D0D15 /* MuseumMap_Navigation.swift in Sources */,
+				B28524EF273AC03D008D0D15 /* Bookings.swift in Sources */,
 				B28524D1273AB8EA008D0D15 /* ContentView.swift in Sources */,
 				B28524CF273AB8EA008D0D15 /* Museum_App.swift in Sources */,
+				B290A378273B7B7C0068F060 /* MuseumDetail_Event.swift in Sources */,
+				B290A376273B7AF40068F060 /* MuseumDetail_Activity.swift in Sources */,
+				B290A374273B79290068F060 /* MuseumDetail_Exhibition.swift in Sources */,
+				B2852500273AE8CB008D0D15 /* GeneralInformation.swift in Sources */,
+				B28524F8273AE6CB008D0D15 /* MuseumMap_RoutePlanning.swift in Sources */,
+				B28524FA273AE856008D0D15 /* StampCard.swift in Sources */,
+				B290A37A273B8EE50068F060 /* CrowdLevelText.swift in Sources */,
+				B28524FC273AE897008D0D15 /* RealtimeData.swift in Sources */,
+				B28524E6273ABA6A008D0D15 /* Home_2.swift in Sources */,
+				B28524F4273AC3B3008D0D15 /* Museum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,20 @@ import SwiftUI
 struct MuseumMap_Navigation: View {
     @ObservedObject var museums = Museums()
     
-    
+    @State var modeSelect:Int = 1
+
     var body: some View {
         VStack{
+            HStack{
+                Picker("Picker",selection: $modeSelect.animation(.spring())) {
+                    Text("Museum").tag(0)
+                    Text("Car Park").tag(1)
+                }
+                .pickerStyle(.segmented)
+                .padding(.horizontal)
+                
+            }
+            if modeSelect == 0{
             VStack{
                 HStack{
                     Text("\t\t  ")
@@ -98,7 +109,12 @@ struct MuseumMap_Navigation: View {
 
             }
             .listStyle(.plain)
-            
+            }
+            else{
+                VStack{
+                    Text("Your car park slot is at ")
+                }
+            }
             
             Spacer()
         }

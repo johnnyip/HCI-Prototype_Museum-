@@ -76,12 +76,15 @@ struct ExhibitionDetail: View {
                                 .font(.system(size: 25))
                         }
                         if accessibilityMode{
-                            Text("This is description text describing the photo, with extra text information about .\n")
+                            Text("This is description text describing the photo and exhibit, with extra description text.\n")
                         HStack{
                             Spacer()
                             Image(systemName: "speaker.circle")
                                 .font(.system(size: 40))
                         }
+                        }
+                        else{
+                            Text("This is description text of the exhibit.\n")
                         }
                     }
                     .padding()

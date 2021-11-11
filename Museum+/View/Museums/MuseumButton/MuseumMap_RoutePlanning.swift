@@ -23,11 +23,7 @@ struct MuseumMap_RoutePlanning: View {
                     Text("Map").tag(1)
                 }
                 .pickerStyle(.segmented)
-                .padding(.horizontal)
-                .onChange(of: modeSelect, perform: { newValue in
-                    
-                })
-                
+                .padding(.horizontal)                
             }
             
             Spacer()

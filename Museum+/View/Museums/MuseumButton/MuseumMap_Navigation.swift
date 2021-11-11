@@ -69,22 +69,36 @@ struct MuseumMap_Navigation: View {
                     .padding()
                     .background(Color.init("lightGrey"))
                     .cornerRadius(15)
+                
+            }
+            List{
+                Text("Click an exhibition above, then add below")
+                    .fontWeight(.ultraLight)
+                
+                ForEach(museums.exhibitions,id:\.self){exhibition in
+                    VStack{
+                        HStack{
+                            Text(exhibition.exhibitionName)
+                                .bold()
+                            Spacer()
+                            VStack(alignment:.trailing){
+                                Text("Distance: ") + Text(exhibition.distance).fontWeight(.heavy)
+                                HStack{
+                                    Text("Crowd Level:")
+                                    CrowdLevelText(level: exhibition.crowdLevel)
+                                }
+                            }
+                        }
+                    }
+
+                }
+                
+
+
 
             }
-//            List{
-//                Text("Click an exhibition above, then add below")
-//                    .fontWeight(.ultraLight)
-//                ForEach(chosenExhibition,id:\.self){exhibition in
-//                    Text(exhibition.exhibitionName)
-//                        .bold()
-//                        
-//                }
-//                .onDelete { offsets in
-//                    chosenExhibition.remove(atOffsets: offsets)
-//                }
-//            }
-//            .listStyle(.plain)
-
+            .listStyle(.plain)
+            
             
             Spacer()
         }

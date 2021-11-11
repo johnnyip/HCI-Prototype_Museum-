@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Settings: View {
     @State var modeSelection:Int = UserDefaults.standard.integer(forKey: "mode")
-    
+    @State var accessibilityMode:Bool = UserDefaults.standard.bool(forKey: "accessibilityMode")
+
     @State var new_visitedBefore:Bool = UserDefaults.standard.bool(forKey: "new_visitedBefore")
     var body: some View {
         Form{
@@ -50,6 +51,30 @@ struct Settings: View {
                     Text("Planned to visit Exhibition 1 3")
                     Text("Event will start at 14:00")
                 }
+            }
+
+            Toggle(isOn: $accessibilityMode) {
+                Text("Accessibility Mode")
+            }
+            .onChange(of: accessibilityMode) { newValue in
+                UserDefaults.standard.set(accessibilityMode,forKey: "accessibilityMode")
+            }
+            
+            
+            Button {
+                modeSelection = 3
+            } label: {
+                Text("Staff Mode")
+            }
+            
+            
+            Section{
+                Button {
+                    UserDefaults.standard.set(false,forKey: "welcomeScreenShown")
+                } label: {
+                    Text("Reset Welcome Screen")
+                }
+
             }
 
         }

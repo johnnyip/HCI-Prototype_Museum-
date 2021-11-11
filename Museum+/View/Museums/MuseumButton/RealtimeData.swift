@@ -89,6 +89,57 @@ struct RealtimeData: View {
                     }
                     .font(.system(size: 20))
             }
+            Divider()
+            HStack{
+                Text("Car Park Slot")
+                    .font(.system(size: 20))
+                    .padding()
+                    .frame(height:30)
+                    .foregroundColor(.white)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+                Spacer()
+            }.padding(.horizontal,10)
+
+            
+            HStack(alignment:.center){
+                    HStack{
+                            VStack(spacing:5){
+                                HStack{
+                                    Text("Car Park Level")
+                                        .bold()
+                                        .font(.system(size: 20))
+                                    Spacer()
+                                    Text("Slot Left")
+                                        .bold()
+                                        .font(.system(size: 20))
+                                }
+                                Divider()
+                                HStack{
+                                    Text("B1")
+                                    Spacer()
+                                    Text("20/100")
+                                }
+                                Divider()
+                                HStack{
+                                    Text("B2")
+                                    Spacer()
+                                    Text("60/100")
+                                }
+                                Divider()
+                                HStack{
+                                    Text("B3")
+                                    Spacer()
+                                    Text("100/100")
+                                }
+                                Divider()
+
+                            }
+                            .padding()
+                    }
+                    .font(.system(size: 20))
+            }
+
 
             
             Spacer()

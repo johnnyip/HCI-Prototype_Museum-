@@ -18,6 +18,9 @@ struct BookingButton: View {
     @State var stepper4 = 0
     @State var stepper5 = 0
     
+    @State var carPark:Bool = false
+    @State var tourGuide:Bool = false
+
     @State var chosenEventID = 0
     
     @State var hide_1:Bool = false
@@ -101,8 +104,24 @@ struct BookingButton: View {
                                 }
                             }
                         }
+                        HStack{
+                            Toggle(isOn: $carPark) {
+                                HStack{
+                                    Text("Car Park Reservation")
+                                    Spacer()
+                                }
+                            }
+                        }
+                        HStack{
+                            Toggle(isOn: $tourGuide) {
+                                HStack{
+                                    Text("Tour Guide Reservation")
+                                    Spacer()
+                                }
+                            }
+                        }
                     }
-                    .padding()
+
                     .background(Color.init("lightGrey"))
                     .cornerRadius(20)
                     .padding(.horizontal)

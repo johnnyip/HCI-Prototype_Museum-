@@ -12,6 +12,9 @@ struct ExhibitionDetail: View {
     @Binding var selected:Bool
     @Binding var currentSelected:Int
     
+    @State var accessibilityMode:Bool = true
+//    @State var accessibilityMode:Bool = UserDefaults.standard.bool(forKey: "accessibilityMode")
+    
     @State var exhibition:MuseumExhibition
     var body: some View {
         VStack{
@@ -25,6 +28,33 @@ struct ExhibitionDetail: View {
                 .background(Color.init("lightGrey"))
                 .cornerRadius(10)
                 .padding()
+                Text("Video Introduction")
+                    .bold()
+                    .font(.system(size: 15))
+                    .padding()
+                    .background(Color.init("lightGrey"))
+                    .cornerRadius(15)
+                    .padding(.horizontal)
+                
+                Image(systemName: "play.fill")
+                    .font(.system(size: 50))
+                    .padding()
+                    .frame(width: 200, height: 100)
+                    .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.black, lineWidth: 4)
+                        )
+                    .padding(.top)
+                if accessibilityMode{
+
+                Text("Click to show video transcription")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.blue)
+                    .cornerRadius(5)
+                }
+                Divider()
+
                 Text("Exhibitions")
                     .bold()
                     .font(.system(size: 15))
@@ -41,6 +71,14 @@ struct ExhibitionDetail: View {
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(30)
+                        if accessibilityMode{
+                            Text("This is description text describing the photo, with extra text information about .\n")
+                        HStack{
+                            Spacer()
+                            Image(systemName: "speaker.circle")
+                                .font(.system(size: 40))
+                        }
+                        }
                     }
                     .padding()
                 }
@@ -72,6 +110,9 @@ struct ExhibitionDetail: View {
             }
             
         }
+//        .onAppear {
+//            accessibilityMode = UserDefaults.standard.bool(forKey: "accessibilityMode");
+//        }
     }
 }
 

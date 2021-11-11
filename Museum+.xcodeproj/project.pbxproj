@@ -35,6 +35,8 @@
 		B290A37E273C2D800068F060 /* ExhibitionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A37D273C2D800068F060 /* ExhibitionDetail.swift */; };
 		B299478B273CECEF005C82E1 /* MuseumList_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478A273CECEF005C82E1 /* MuseumList_Item.swift */; };
 		B299478D273CF121005C82E1 /* BookingButton_EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */; };
+		B299478F273CFFE9005C82E1 /* Home_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478E273CFFE9005C82E1 /* Home_3.swift */; };
+		B2994791273D0D99005C82E1 /* Bookings_Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2994790273D0D99005C82E1 /* Bookings_Staff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		B290A37D273C2D800068F060 /* ExhibitionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetail.swift; sourceTree = "<group>"; };
 		B299478A273CECEF005C82E1 /* MuseumList_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumList_Item.swift; sourceTree = "<group>"; };
 		B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingButton_EventItem.swift; sourceTree = "<group>"; };
+		B299478E273CFFE9005C82E1 /* Home_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_3.swift; sourceTree = "<group>"; };
+		B2994790273D0D99005C82E1 /* Bookings_Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings_Staff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				B28524E1273ABA33008D0D15 /* Museums */,
 				B28524E0273AB9F7008D0D15 /* Home */,
 				B28524EE273AC03D008D0D15 /* Bookings.swift */,
+				B2994790273D0D99005C82E1 /* Bookings_Staff.swift */,
 				B28524EC273AC02B008D0D15 /* Settings.swift */,
 			);
 			path = View;
@@ -133,6 +138,7 @@
 			children = (
 				B28524E3273ABA64008D0D15 /* Home_1.swift */,
 				B28524E5273ABA6A008D0D15 /* Home_2.swift */,
+				B299478E273CFFE9005C82E1 /* Home_3.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				B28524ED273AC02B008D0D15 /* Settings.swift in Sources */,
 				B290A37C273C1A250068F060 /* EventDetail.swift in Sources */,
 				B28524E8273ABA7A008D0D15 /* MuseumList.swift in Sources */,
+				B299478F273CFFE9005C82E1 /* Home_3.swift in Sources */,
 				B2852504273AF7DD008D0D15 /* ButtonsView.swift in Sources */,
 				B2852506273AF8A2008D0D15 /* MuseumMap_Navigation.swift in Sources */,
 				B290A37E273C2D800068F060 /* ExhibitionDetail.swift in Sources */,
@@ -282,6 +289,7 @@
 				B28524FC273AE897008D0D15 /* RealtimeData.swift in Sources */,
 				B28524E6273ABA6A008D0D15 /* Home_2.swift in Sources */,
 				B28524F4273AC3B3008D0D15 /* Museum.swift in Sources */,
+				B2994791273D0D99005C82E1 /* Bookings_Staff.swift in Sources */,
 				B299478D273CF121005C82E1 /* BookingButton_EventItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

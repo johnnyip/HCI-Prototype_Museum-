@@ -71,19 +71,19 @@ struct MuseumMap_Navigation: View {
                     .cornerRadius(15)
 
             }
-            List{
-                Text("Click an exhibition above, then add below")
-                    .fontWeight(.ultraLight)
-                ForEach(chosenExhibition,id:\.self){exhibition in
-                    Text(exhibition.exhibitionName)
-                        .bold()
-                        
-                }
-                .onDelete { offsets in
-                    chosenExhibition.remove(atOffsets: offsets)
-                }
-            }
-            .listStyle(.plain)
+//            List{
+//                Text("Click an exhibition above, then add below")
+//                    .fontWeight(.ultraLight)
+//                ForEach(chosenExhibition,id:\.self){exhibition in
+//                    Text(exhibition.exhibitionName)
+//                        .bold()
+//                        
+//                }
+//                .onDelete { offsets in
+//                    chosenExhibition.remove(atOffsets: offsets)
+//                }
+//            }
+//            .listStyle(.plain)
 
             
             Spacer()

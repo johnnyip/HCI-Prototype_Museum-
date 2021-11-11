@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EventDetail_item: View {
     @State var event:[String]
-    
+    @State var length:Int
     @State var price:String
     
     var body: some View {
@@ -31,6 +31,12 @@ struct EventDetail_item: View {
                     .bold()
                 Spacer()
                 Text(event[2])
+            }
+            HStack{
+                Text("Duration")
+                    .bold()
+                Spacer()
+                Text("\(length) mins")
             }
             HStack{
                 Text("Price")

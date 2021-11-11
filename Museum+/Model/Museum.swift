@@ -31,6 +31,7 @@ struct MuseumEvent: Hashable, Identifiable, Codable{
     var scheduleAndSlot:[[String]]
     var price:String
     var img:String
+    var length:Int
 }
 struct MuseumActivity: Hashable, Identifiable, Codable{
     var id: Int
@@ -62,9 +63,10 @@ class Museums :ObservableObject, Identifiable{
     ]
     
     @Published var events:[MuseumEvent] = [
-        MuseumEvent(id: 1, eventName: "Robot Cubes Workshop", scheduleAndSlot: [["10:30","10/100","English"],["12:30","10/100","Chinese"],["14:30","10/100","English"],["16:30","10/100","Chinese"]],price: "$100", img: "event_1"),
-        MuseumEvent(id: 2, eventName: "Digital Sculpting Workshop for Beginners", scheduleAndSlot: [["10:00","20/50","Chinese"],["12:00","20/50","English"],["14:00","20/50","Chinese"],["16:00","20/50","Chinese"]],price: "$50", img: "event_2"),
-        MuseumEvent(id: 3, eventName: "Flipbook Machine", scheduleAndSlot: [["12:00","2/50","Chinese"],["14:00","2/50","English"],["16:00","2/50","Chinese"],["17:00","2/50","Chinese"]],price: "$200", img: "event_3")
+        MuseumEvent(id: 4, eventName: "Short Video about Magnetic", scheduleAndSlot: [["12:00","2/50","Chinese"],["14:00","2/50","English"],["16:00","2/50","Chinese"],["17:00","2/50","Chinese"]],price: "$0", img: "event_4",length: 10),
+        MuseumEvent(id: 1, eventName: "Robot Cubes Workshop", scheduleAndSlot: [["10:30","10/100","English"],["12:30","10/100","Chinese"],["14:30","10/100","English"],["16:30","10/100","Chinese"]],price: "$100", img: "event_1",length: 60),
+        MuseumEvent(id: 2, eventName: "Digital Sculpting Workshop for Beginners", scheduleAndSlot: [["10:00","20/50","Chinese"],["12:00","20/50","English"],["14:00","20/50","Chinese"],["16:00","20/50","Chinese"]],price: "$50", img: "event_2",length: 85),
+        MuseumEvent(id: 3, eventName: "Flipbook Machine", scheduleAndSlot: [["12:00","2/50","Chinese"],["14:00","2/50","English"],["16:00","2/50","Chinese"],["17:00","2/50","Chinese"]],price: "$200", img: "event_3",length: 100),
     ]
     
     @Published var activities:[MuseumActivity] = [

@@ -67,10 +67,14 @@ struct ExhibitionDetail: View {
                     VStack{
                         Text(exhibit[0])
                             .bold()
-                        Image(exhibit[1])
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(30)
+                        HStack(alignment:.bottom){
+                            Image(exhibit[1])
+                                .resizable()
+                                .scaledToFill()
+                                .cornerRadius(30)
+                            Image(systemName: "plus.magnifyingglass")
+                                .font(.system(size: 25))
+                        }
                         if accessibilityMode{
                             Text("This is description text describing the photo, with extra text information about .\n")
                         HStack{

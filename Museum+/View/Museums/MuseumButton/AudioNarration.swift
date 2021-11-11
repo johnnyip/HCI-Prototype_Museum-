@@ -10,11 +10,13 @@ import SwiftUI
 struct AudioNarration: View {
     @ObservedObject var museums = Museums()
     @State var receiveMode:Bool = true
+    @State var languageSelection:Int = 1
     
     @State var accessibilityMode:Bool = true
     //    @State var accessibilityMode:Bool = UserDefaults.standard.bool(forKey: "accessibilityMode")
     
     var body: some View {
+        VStack{
         VStack(spacing:10){
             
             VStack{
@@ -25,8 +27,6 @@ struct AudioNarration: View {
                         .bold()
                 }
                 .padding(.horizontal)
-                .padding(.vertical,5)
-                .font(.system(size: 20))
                 Divider()
                 HStack{
                     Text("Exhibit Name")
@@ -35,12 +35,23 @@ struct AudioNarration: View {
                         .bold()
                 }
                 .padding(.horizontal)
-                .padding(.vertical,5)
-                .font(.system(size: 20))
+                HStack(spacing:0){
+                    Text("Language")
+                    Spacer()
+
+                    Picker(selection: $languageSelection,label:Text("Language picker")) {
+                        Text("English").tag(1)
+                        Text("廣東話").tag(2)
+                        Text("普通話").tag(3)
+                    }
+                    .pickerStyle(.segmented)
+                }
+
+                
                 
                 if accessibilityMode{
                     Text("Click to show audio transcription")
-                        .padding()
+                        .padding(7)
                         .foregroundColor(.white)
                         .background(Color.blue)
                         .cornerRadius(10)
@@ -48,7 +59,7 @@ struct AudioNarration: View {
                 
             }
         }
-        .padding()
+        .padding(7)
         .background(Color.init("lightGrey"))
         .cornerRadius(20)
         .padding(.horizontal)
@@ -69,7 +80,7 @@ struct AudioNarration: View {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 20))
                     .foregroundColor(.white)
-                    .padding(.vertical,15)
+                    .padding(.vertical,5)
                     .padding(.horizontal,40)
                     .background(Color.blue)
                     .cornerRadius(20)
@@ -77,7 +88,7 @@ struct AudioNarration: View {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 20))
                     .foregroundColor(.white)
-                    .padding(.vertical,15)
+                    .padding(.vertical,5)
                     .padding(.horizontal,30)
                     .background(Color.blue)
                     .cornerRadius(20)
@@ -153,6 +164,7 @@ struct AudioNarration: View {
     //        .onAppear {
     //            accessibilityMode = UserDefaults.standard.bool(forKey: "accessibilityMode");
     //        }
+    }
 }
 
 

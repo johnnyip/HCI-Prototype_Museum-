@@ -37,6 +37,7 @@
 		B299478D273CF121005C82E1 /* BookingButton_EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */; };
 		B299478F273CFFE9005C82E1 /* Home_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478E273CFFE9005C82E1 /* Home_3.swift */; };
 		B2994791273D0D99005C82E1 /* Bookings_Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2994790273D0D99005C82E1 /* Bookings_Staff.swift */; };
+		B2994793273D3AD4005C82E1 /* Home_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2994792273D3AD4005C82E1 /* Home_11.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingButton_EventItem.swift; sourceTree = "<group>"; };
 		B299478E273CFFE9005C82E1 /* Home_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_3.swift; sourceTree = "<group>"; };
 		B2994790273D0D99005C82E1 /* Bookings_Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings_Staff.swift; sourceTree = "<group>"; };
+		B2994792273D3AD4005C82E1 /* Home_11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_11.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				B28524E3273ABA64008D0D15 /* Home_1.swift */,
+				B2994792273D3AD4005C82E1 /* Home_11.swift */,
 				B28524E5273ABA6A008D0D15 /* Home_2.swift */,
 				B299478E273CFFE9005C82E1 /* Home_3.swift */,
 			);
@@ -265,6 +268,7 @@
 			files = (
 				B28524EA273ABA84008D0D15 /* MuseumDetail.swift in Sources */,
 				B28524FE273AE8B4008D0D15 /* BookingButton.swift in Sources */,
+				B2994793273D3AD4005C82E1 /* Home_11.swift in Sources */,
 				B28524F6273AE622008D0D15 /* AudioNarration.swift in Sources */,
 				B28524E4273ABA64008D0D15 /* Home_1.swift in Sources */,
 				B28524ED273AC02B008D0D15 /* Settings.swift in Sources */,

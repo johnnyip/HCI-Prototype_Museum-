@@ -45,7 +45,8 @@ struct MuseumDetail_Event: View {
                                         Text("Language: ") + Text("\(event.scheduleAndSlot[0][2])").fontWeight(.light)
                                         
                                         Text("Availability: ") + Text("\(event.scheduleAndSlot[0][1])").fontWeight(.light)
-                                        
+                                        Text("Duration: ") + Text("\(event.length) mins").fontWeight(.light)
+
                                         Text("Fee: ") + Text("\(event.price)").fontWeight(.light)
 
                                 }

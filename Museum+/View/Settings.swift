@@ -34,7 +34,9 @@ struct Settings: View {
                     .onChange(of: new_visitedBefore) { newValue in
                         UserDefaults.standard.set(new_visitedBefore,forKey: "new_visitedBefore")
                     }
-                    Text("Visited: Exhibition [1] [3]")
+                    Text("Visited: Science & Art Museum")
+                    Text("[Scicence Museum] Visited: Exhibition [1] [3]")
+                    
                 }
             }
             

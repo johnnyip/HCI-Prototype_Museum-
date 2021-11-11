@@ -50,7 +50,7 @@ struct EventDetail: View {
                     
                     if (filterOption == 0) || (filterOption==1 && event[2]=="Chinese") || (filterOption==2 && event[2]=="English"){
                         
-                        EventDetail_item(event: event, price: chosenEvent.price)
+                        EventDetail_item(event: event,length: chosenEvent.length, price: chosenEvent.price)
                     }
                         
                     }
@@ -64,7 +64,7 @@ struct EventDetail: View {
     
     struct EventDetail_Previews: PreviewProvider {
         static var previews: some View {
-            EventDetail(chosenEvent: MuseumEvent(id: 1, eventName: "Robot Cubes Workshop", scheduleAndSlot: [["10:30","10/100","English"],["12:30","10/100","Chinese"],["14:30","10/100","English"],["16:30","10/100","Chinese"]],price: "$100", img: "event_1")
+            EventDetail(chosenEvent: MuseumEvent(id: 1, eventName: "Robot Cubes Workshop", scheduleAndSlot: [["10:30","10/100","English"],["12:30","10/100","Chinese"],["14:30","10/100","English"],["16:30","10/100","Chinese"]],price: "$100", img: "event_1",length: 2)
             )
         }
     }

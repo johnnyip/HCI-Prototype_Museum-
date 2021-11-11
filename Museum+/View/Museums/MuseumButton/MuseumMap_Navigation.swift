@@ -112,7 +112,29 @@ struct MuseumMap_Navigation: View {
             }
             else{
                 VStack{
-                    Text("Your car park slot is at ")
+                    Text("Your car park slot is at ")                        .font(.system(size: 25))+Text("56").fontWeight(.heavy)                        .font(.system(size: 25))
+                    Image("carParkFloorPlan")
+                        .resizable()
+                        .frame(height:400)
+                    Text("Navigate to my Reserved Slot")
+                        .padding()
+                        .frame(maxWidth:.infinity)
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                        .padding(.horizontal)
+
+                    Text("Navigate to an Empty Slot")
+                        .padding()
+                        .frame(maxWidth:.infinity)
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                        .padding(.horizontal)
+                    
+                    Text("")
                 }
             }
             

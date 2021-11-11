@@ -14,7 +14,7 @@ struct Bookings_Staff: View {
     @State var allDay:Bool = false
 
     var body: some View {
-        VStack{
+        ScrollView{
             VStack{
                 Menu {
                     ForEach(museums.museums,id:\.self){museum in

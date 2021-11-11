@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var welcomeScreenShown:Bool = UserDefaults.standard.bool(forKey: "welcomeScreenShown")
     @State var modeSelection:Int = UserDefaults.standard.integer(forKey: "mode")
     @State var tabSelection:Int = 0
+    
     var body: some View {
+        if !welcomeScreenShown{
+            WelcomeScreen(showWelcome: $welcomeScreenShown)
+        }
+        else{
         TabView(selection:$tabSelection){
             if modeSelection != 3{
                 NavigationView{
@@ -80,6 +86,7 @@ struct ContentView: View {
         })
         .onChange(of: tabSelection) { newValue in
             modeSelection = UserDefaults.standard.integer(forKey: "mode")
+        }
         }
     }
 }

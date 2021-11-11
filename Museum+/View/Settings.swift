@@ -10,8 +10,8 @@ import SwiftUI
 struct Settings: View {
     @State var modeSelection:Int = UserDefaults.standard.integer(forKey: "mode")
     @State var accessibilityMode:Bool = UserDefaults.standard.bool(forKey: "accessibilityMode")
-
     @State var new_visitedBefore:Bool = UserDefaults.standard.bool(forKey: "new_visitedBefore")
+    
     var body: some View {
         Form{
             Section{

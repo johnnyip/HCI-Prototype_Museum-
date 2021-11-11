@@ -70,7 +70,7 @@ struct AudioNarration: View {
                     Text("Auto detect track information")
                     //                            .font(.system(size: 20))
                         .bold()
-                    Text("(with iBeacon technology)")
+                    Text("(with Beacon technology)")
                 }
             }
             

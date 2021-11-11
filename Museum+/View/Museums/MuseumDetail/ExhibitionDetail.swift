@@ -51,7 +51,7 @@ struct ExhibitionDetail: View {
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.blue)
-                    .cornerRadius(5)
+                    .cornerRadius(10)
                 }
                 Divider()
 
@@ -108,10 +108,10 @@ struct ExhibitionDetail: View {
                     Text("Add to Route Planning")
                         .font(.system(size: 25))
                         .frame(maxWidth: .infinity)
-                        .padding(7)
+                        .padding(10)
                         .foregroundColor(.white)
                         .background(Color.blue)
-                        .cornerRadius(20)
+                        .cornerRadius(10)
                         .padding()
                 }
             }

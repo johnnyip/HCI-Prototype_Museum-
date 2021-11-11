@@ -56,6 +56,28 @@ struct Home_2: View {
             
             ButtonsView()
             
+            Text("Show Entrance Ticket")
+                .bold()
+                .font(.system(size: 20))
+                .padding()
+                .frame(maxWidth:.infinity)
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(10)
+                .padding(.horizontal)
+                .padding(.vertical,5)
+
+            Text("Show Event Ticket")
+                .bold()
+                .font(.system(size: 20))
+                .padding()
+                .frame(maxWidth:.infinity)
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(10)
+                .padding(.horizontal)
+                .padding(.vertical,5)
+ 
             Spacer()
 
         }

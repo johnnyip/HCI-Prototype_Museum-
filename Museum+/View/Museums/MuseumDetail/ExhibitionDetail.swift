@@ -12,8 +12,7 @@ struct ExhibitionDetail: View {
     @Binding var selected:Bool
     @Binding var currentSelected:Int
     
-    @State var accessibilityMode:Bool = true
-//    @State var accessibilityMode:Bool = UserDefaults.standard.bool(forKey: "accessibilityMode")
+    @State var accessibilityMode:Bool = UserDefaults.standard.bool(forKey: "accessibilityMode")
     
     @State var exhibition:MuseumExhibition
     var body: some View {
@@ -55,7 +54,7 @@ struct ExhibitionDetail: View {
                 }
                 Divider()
 
-                Text("Exhibitions")
+                Text("Exhibits")
                     .bold()
                     .font(.system(size: 15))
                     .padding()
@@ -117,9 +116,9 @@ struct ExhibitionDetail: View {
             }
             
         }
-//        .onAppear {
-//            accessibilityMode = UserDefaults.standard.bool(forKey: "accessibilityMode");
-//        }
+        .onAppear {
+            accessibilityMode = UserDefaults.standard.bool(forKey: "accessibilityMode");
+        }
     }
 }
 

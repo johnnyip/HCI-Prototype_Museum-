@@ -59,7 +59,9 @@ struct Settings: View {
                 Text("Accessibility Mode")
             }
             .onChange(of: accessibilityMode) { newValue in
+                print(accessibilityMode)
                 UserDefaults.standard.set(accessibilityMode,forKey: "accessibilityMode")
+                print(UserDefaults.standard.bool(forKey: "accessibilityMode"))
             }
             
             

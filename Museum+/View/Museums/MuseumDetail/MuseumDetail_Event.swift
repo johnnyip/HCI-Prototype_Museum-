@@ -29,24 +29,28 @@ struct MuseumDetail_Event: View {
                     ScrollView(.horizontal,showsIndicators: false){
                         HStack{
                             ForEach(museums.events,id:\.self){event in
-                                VStack{
-                                    Image(event.img)
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(height:150)
-                                        .cornerRadius(20)
-                                        .clipped()
-                                    Text(event.eventName).bold()
-                                    Text("Next timeslot: ") + Text("\(event.scheduleAndSlot[0][0])").fontWeight(.light)
+                                NavigationLink {
+                                    EventDetail(chosenEvent: event)
+                                } label: {
+                                    VStack{
+                                        Image(event.img)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(height:150)
+                                            .cornerRadius(20)
+                                            .clipped()
+                                        Text(event.eventName).bold()
+                                        Text("Next timeslot: ") + Text("\(event.scheduleAndSlot[0][0])").fontWeight(.light)
 
-                                    Text("Language: ") + Text("\(event.scheduleAndSlot[0][2])").fontWeight(.light)
-                                    
-                                    Text("Availability: ") + Text("\(event.scheduleAndSlot[0][1])").fontWeight(.light)
-                                    
-                                    Text("Fee: ") + Text("\(event.price)").fontWeight(.light)
+                                        Text("Language: ") + Text("\(event.scheduleAndSlot[0][2])").fontWeight(.light)
+                                        
+                                        Text("Availability: ") + Text("\(event.scheduleAndSlot[0][1])").fontWeight(.light)
+                                        
+                                        Text("Fee: ") + Text("\(event.price)").fontWeight(.light)
 
-                            }
-                            
+                                }
+                                }
+
                         }
                     }
                 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B280677B273CEA0E00C4EE52 /* EventDetail_item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B280677A273CEA0E00C4EE52 /* EventDetail_item.swift */; };
 		B28524CF273AB8EA008D0D15 /* Museum_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524CE273AB8EA008D0D15 /* Museum_App.swift */; };
 		B28524D1273AB8EA008D0D15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28524D0273AB8EA008D0D15 /* ContentView.swift */; };
 		B28524D3273AB8EA008D0D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28524D2273AB8EA008D0D15 /* Assets.xcassets */; };
@@ -30,9 +31,14 @@
 		B290A376273B7AF40068F060 /* MuseumDetail_Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A375273B7AF40068F060 /* MuseumDetail_Activity.swift */; };
 		B290A378273B7B7C0068F060 /* MuseumDetail_Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A377273B7B7C0068F060 /* MuseumDetail_Event.swift */; };
 		B290A37A273B8EE50068F060 /* CrowdLevelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A379273B8EE50068F060 /* CrowdLevelText.swift */; };
+		B290A37C273C1A250068F060 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A37B273C1A250068F060 /* EventDetail.swift */; };
+		B290A37E273C2D800068F060 /* ExhibitionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290A37D273C2D800068F060 /* ExhibitionDetail.swift */; };
+		B299478B273CECEF005C82E1 /* MuseumList_Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478A273CECEF005C82E1 /* MuseumList_Item.swift */; };
+		B299478D273CF121005C82E1 /* BookingButton_EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B280677A273CEA0E00C4EE52 /* EventDetail_item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail_item.swift; sourceTree = "<group>"; };
 		B28524CB273AB8EA008D0D15 /* Museum+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Museum+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28524CE273AB8EA008D0D15 /* Museum_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museum_App.swift; sourceTree = "<group>"; };
 		B28524D0273AB8EA008D0D15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,10 @@
 		B290A375273B7AF40068F060 /* MuseumDetail_Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetail_Activity.swift; sourceTree = "<group>"; };
 		B290A377273B7B7C0068F060 /* MuseumDetail_Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetail_Event.swift; sourceTree = "<group>"; };
 		B290A379273B8EE50068F060 /* CrowdLevelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdLevelText.swift; sourceTree = "<group>"; };
+		B290A37B273C1A250068F060 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		B290A37D273C2D800068F060 /* ExhibitionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetail.swift; sourceTree = "<group>"; };
+		B299478A273CECEF005C82E1 /* MuseumList_Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumList_Item.swift; sourceTree = "<group>"; };
+		B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingButton_EventItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 				B2852503273AF7DD008D0D15 /* ButtonsView.swift */,
 				B28524EB273ABA93008D0D15 /* MuseumButton */,
 				B28524E7273ABA7A008D0D15 /* MuseumList.swift */,
+				B299478A273CECEF005C82E1 /* MuseumList_Item.swift */,
 				B290A372273B790B0068F060 /* MuseumDetail */,
 				B290A379273B8EE50068F060 /* CrowdLevelText.swift */,
 			);
@@ -148,6 +159,7 @@
 				B28524F9273AE856008D0D15 /* StampCard.swift */,
 				B28524FB273AE897008D0D15 /* RealtimeData.swift */,
 				B28524FD273AE8B4008D0D15 /* BookingButton.swift */,
+				B299478C273CF121005C82E1 /* BookingButton_EventItem.swift */,
 				B28524FF273AE8CB008D0D15 /* GeneralInformation.swift */,
 			);
 			path = MuseumButton;
@@ -168,6 +180,9 @@
 				B290A373273B79290068F060 /* MuseumDetail_Exhibition.swift */,
 				B290A375273B7AF40068F060 /* MuseumDetail_Activity.swift */,
 				B290A377273B7B7C0068F060 /* MuseumDetail_Event.swift */,
+				B290A37B273C1A250068F060 /* EventDetail.swift */,
+				B280677A273CEA0E00C4EE52 /* EventDetail_item.swift */,
+				B290A37D273C2D800068F060 /* ExhibitionDetail.swift */,
 			);
 			path = MuseumDetail;
 			sourceTree = "<group>";
@@ -247,9 +262,11 @@
 				B28524F6273AE622008D0D15 /* AudioNarration.swift in Sources */,
 				B28524E4273ABA64008D0D15 /* Home_1.swift in Sources */,
 				B28524ED273AC02B008D0D15 /* Settings.swift in Sources */,
+				B290A37C273C1A250068F060 /* EventDetail.swift in Sources */,
 				B28524E8273ABA7A008D0D15 /* MuseumList.swift in Sources */,
 				B2852504273AF7DD008D0D15 /* ButtonsView.swift in Sources */,
 				B2852506273AF8A2008D0D15 /* MuseumMap_Navigation.swift in Sources */,
+				B290A37E273C2D800068F060 /* ExhibitionDetail.swift in Sources */,
 				B28524EF273AC03D008D0D15 /* Bookings.swift in Sources */,
 				B28524D1273AB8EA008D0D15 /* ContentView.swift in Sources */,
 				B28524CF273AB8EA008D0D15 /* Museum_App.swift in Sources */,
@@ -259,10 +276,13 @@
 				B2852500273AE8CB008D0D15 /* GeneralInformation.swift in Sources */,
 				B28524F8273AE6CB008D0D15 /* MuseumMap_RoutePlanning.swift in Sources */,
 				B28524FA273AE856008D0D15 /* StampCard.swift in Sources */,
+				B299478B273CECEF005C82E1 /* MuseumList_Item.swift in Sources */,
 				B290A37A273B8EE50068F060 /* CrowdLevelText.swift in Sources */,
+				B280677B273CEA0E00C4EE52 /* EventDetail_item.swift in Sources */,
 				B28524FC273AE897008D0D15 /* RealtimeData.swift in Sources */,
 				B28524E6273ABA6A008D0D15 /* Home_2.swift in Sources */,
 				B28524F4273AC3B3008D0D15 /* Museum.swift in Sources */,
+				B299478D273CF121005C82E1 /* BookingButton_EventItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +421,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,7 +451,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,6 +15,7 @@ struct ButtonsView: View {
             HStack{
                 NavigationLink {
                     AudioNarration()
+                        .navigationTitle("Audio Narration")
                 } label: {
                     Text("Audio Narration")
                         .font(.system(size: 20))
@@ -26,6 +27,8 @@ struct ButtonsView: View {
                 if modeSelection != 2{
                     NavigationLink {
                         MuseumMap_RoutePlanning()
+                            .navigationTitle("Museum Map & Route Planning")
+
                     } label: {
                         Text("Museum Map & Route Planning")
                             .font(.system(size: 20))
@@ -37,6 +40,7 @@ struct ButtonsView: View {
                 }else{
                     NavigationLink {
                         MuseumMap_Navigation()
+                            .navigationTitle("Museum Map & Navigation")
                     } label: {
                         Text("Museum Map & Navigation")
                             .font(.system(size: 20))
@@ -55,6 +59,7 @@ struct ButtonsView: View {
             HStack{
                 NavigationLink {
                     StampCard()
+                        .navigationTitle("Stamp Card")
                 } label: {
                     Text("Stamp Card")
                         .font(.system(size: 20))
@@ -65,6 +70,7 @@ struct ButtonsView: View {
                 }
                 NavigationLink {
                     RealtimeData()
+                        .navigationTitle("Real-Time Data")
                 } label: {
                     Text("Real-Time Data")
                         .font(.system(size: 20))
@@ -79,6 +85,7 @@ struct ButtonsView: View {
             HStack{
                 NavigationLink {
                     BookingButton()
+                        .navigationTitle("Ticket/Event Booking")
                 } label: {
                     Text("Ticket/Event Booking")
                         .font(.system(size: 20))
@@ -89,6 +96,7 @@ struct ButtonsView: View {
                 }
                 NavigationLink {
                     GeneralInformation()
+                        .navigationTitle("General Information")
                 } label: {
                     Text("General Information")
                         .font(.system(size: 20))

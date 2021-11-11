@@ -35,6 +35,11 @@ struct MuseumDetail_Exhibition: View {
                             ScrollView(.horizontal,showsIndicators: false){
                                 HStack{
                                     ForEach(museums.exhibitions,id:\.self){exhibition in
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: exhibition)
+                                                .navigationBarTitle(exhibition.exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(exhibition.img)
                                                 .resizable()
@@ -43,6 +48,8 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(exhibition.exhibitionName)
+                                                .bold()
+                                        }
                                         }
                                     }
                                     
@@ -73,13 +80,18 @@ struct MuseumDetail_Exhibition: View {
                                             self.new_mode.toggle()
                                         }
                                     }
-
-                                    
+                                
+                                
                             }.padding(.horizontal,10)
                             
                             HStack{
                                 ScrollView(.horizontal,showsIndicators: false){
                                     HStack{
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[1])
+                                                .navigationBarTitle(museums.exhibitions[1].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[1].img)
                                                 .resizable()
@@ -88,7 +100,14 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[1].exhibitionName)
+                                                .bold()
                                         }
+                                        }
+                                            NavigationLink {
+                                                ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[3])
+                                                    .navigationBarTitle(museums.exhibitions[3].exhibitionName)
+                                            } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[3].img)
                                                 .resizable()
@@ -97,8 +116,10 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[3].exhibitionName)
+                                                .bold()
                                         }
-
+                                            }
+                                        
                                         
                                     }
                                 }
@@ -125,12 +146,17 @@ struct MuseumDetail_Exhibition: View {
                                             self.new_mode.toggle()
                                         }
                                     }
-
+                                
                             }.padding(.horizontal,10)
-
+                            
                             HStack{
                                 ScrollView(.horizontal,showsIndicators: false){
                                     HStack{
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[0])
+                                                .navigationBarTitle(museums.exhibitions[0].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[0].img)
                                                 .resizable()
@@ -139,7 +165,14 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[0].exhibitionName)
+                                                .bold()
                                         }
+                                        }
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[2])
+                                                .navigationBarTitle(museums.exhibitions[2].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[2].img)
                                                 .resizable()
@@ -148,8 +181,10 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[2].exhibitionName)
+                                                .bold()
                                         }
-
+                                        }
+                                        
                                         
                                     }
                                 }
@@ -178,6 +213,11 @@ struct MuseumDetail_Exhibition: View {
                             HStack{
                                 ScrollView(.horizontal,showsIndicators: false){
                                     HStack{
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[0])
+                                                .navigationBarTitle(museums.exhibitions[0].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[0].img)
                                                 .resizable()
@@ -186,13 +226,19 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[0].exhibitionName)
+                                                .bold()
                                             Text("Distance: ") + Text(museums.exhibitions[0].distance).fontWeight(.heavy)
                                             HStack{
                                                 Text("Crowd Level:")
                                                 CrowdLevelText(level: museums.exhibitions[0].crowdLevel)
                                             }
-
                                         }
+                                        }
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[2])
+                                                .navigationBarTitle(museums.exhibitions[2].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[2].img)
                                                 .resizable()
@@ -201,12 +247,14 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[2].exhibitionName)
+                                                .bold()
                                             Text("Distance: ") + Text(museums.exhibitions[2].distance).fontWeight(.heavy)
                                             HStack{
                                                 Text("Crowd Level:")
                                                 CrowdLevelText(level: museums.exhibitions[2].crowdLevel)
                                             }
-
+                                            
+                                        }
                                         }
                                     }
                                 }
@@ -225,30 +273,38 @@ struct MuseumDetail_Exhibition: View {
                             .background(Color.gray)
                             .cornerRadius(10)
                         Spacer()
-                        Menu(inMuseum_mode){
+                        Menu("Sort By"){
                             Button {
                                 self.inMuseum_mode = "By Crowd Level"
                             } label: {
-                                Text("By Crowd Level")
+                                Text("Crowd Level")
                                 Spacer()
-                                if self.inMuseum_mode == "time"{
+                                if self.inMuseum_mode == "By Crowd Level"{
                                     Image(systemName: "checkmark")
                                 }
                             }
-                                                        
+                            
                             Button {
                                 self.inMuseum_mode = "By Distance"
                             } label: {
-                                Text("By Distance")
+                                Text("Distance")
                                 Spacer()
-                                if self.inMuseum_mode == "nearest"{
+                                if self.inMuseum_mode == "By Distance"{
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                            Button {
+                                self.inMuseum_mode = "By Popularity"
+                            } label: {
+                                Text("Popularity")
+                                Spacer()
+                                if self.inMuseum_mode == "By Popularity"{
                                     Image(systemName: "checkmark")
                                 }
                             }
 
-
-
                         }
+                        .padding()
                     }.padding(.horizontal,5)
                     
                     
@@ -257,6 +313,11 @@ struct MuseumDetail_Exhibition: View {
                             HStack{
                                 ScrollView(.horizontal,showsIndicators: false){
                                     HStack{
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3])
+                                                .navigationBarTitle(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].img)
                                                 .resizable()
@@ -265,13 +326,19 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].exhibitionName)
-                                                Text("Distance: ") + Text(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].distance).fontWeight(.heavy)
-                                                HStack{
-                                                    Text("Crowd Level:")
-                                                    CrowdLevelText(level: museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].crowdLevel)
-                                                }
-
+                                                .bold()
+                                            Text("Distance: ") + Text(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].distance).fontWeight(.heavy)
+                                            HStack{
+                                                Text("Crowd Level:")
+                                                CrowdLevelText(level: museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 1:3].crowdLevel)
+                                            }
                                         }
+                                        }
+                                        NavigationLink {
+                                            ExhibitionDetail(selected: .constant(false),currentSelected: .constant(10), exhibition: museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1])
+                                                .navigationBarTitle(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].exhibitionName)
+                                        } label: {
+
                                         VStack{
                                             Image(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].img)
                                                 .resizable()
@@ -280,13 +347,15 @@ struct MuseumDetail_Exhibition: View {
                                                 .cornerRadius(20)
                                                 .clipped()
                                             Text(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].exhibitionName)
-                                                Text("Distance: ") + Text(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].distance).fontWeight(.heavy)
-                                                
-                                                HStack{
-                                                    Text("Crowd Level:")
-                                                    CrowdLevelText(level: museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].crowdLevel)
-                                                }
-
+                                                .bold()
+                                            Text("Distance: ") + Text(museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].distance).fontWeight(.heavy)
+                                            
+                                            HStack{
+                                                Text("Crowd Level:")
+                                                CrowdLevelText(level: museums.exhibitions[(inMuseum_mode == "By Crowd Level") ? 3:1].crowdLevel)
+                                            }
+                                            
+                                        }
                                         }
                                     }
                                 }
@@ -294,7 +363,7 @@ struct MuseumDetail_Exhibition: View {
                         }
                     }
                 }.padding(.horizontal,7)
-
+                
                 
             }
         }

@@ -16,7 +16,7 @@ struct GeneralInformation: View {
                     Spacer()
                     Text("2732 3232")
                 }
-                .padding()
+                .padding(.horizontal)
                 Divider()
                 
                 HStack{
@@ -24,14 +24,14 @@ struct GeneralInformation: View {
                     Spacer()
                     Text("2311 2248")
                 }
-                .padding()
+                .padding(.horizontal)
                 Divider()
                 HStack{
                     Text("Email")
                     Spacer()
                     Text("enquiries@hk.science.museum")
                 }
-                .padding()
+                .padding(.horizontal)
                 Divider()
 
             }
@@ -42,12 +42,12 @@ struct GeneralInformation: View {
                     Text("(Today)")
                     Text("10:00 - 18:00\n")
                     Text("(Mon-Fri)")
-                    Text("10:00 - 18:00\n")
-                    Text("(Sat, Public Holiday)")
+                    Text("10:00 - 18:00")
+                    Text("\n(Sat, Public Holiday)")
                     Text("10:00 - 19:00\n")
                 }
             }
-            .padding()
+            .padding(.horizontal)
             
             Divider()
             
@@ -61,8 +61,8 @@ struct GeneralInformation: View {
                         .multilineTextAlignment(.trailing)
                 }
             }
-            .padding()
-            
+            .padding(.horizontal)
+
             Divider()
 
             Spacer()

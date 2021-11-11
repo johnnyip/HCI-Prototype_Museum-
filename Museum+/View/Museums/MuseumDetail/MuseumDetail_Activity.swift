@@ -39,6 +39,7 @@ struct MuseumDetail_Activity: View {
                                             .cornerRadius(20)
                                             .clipped()
                                         Text(activity.activityName)
+                                            .bold()
                                         Text("Average queuing time: \(activity.waitingTime) mins")
                                             .fontWeight(.ultraLight)
                                     }
@@ -73,6 +74,7 @@ struct MuseumDetail_Activity: View {
                                             .cornerRadius(20)
                                             .clipped()
                                         Text(activity.activityName)
+                                            .bold()
                                         Text("Real-time queuing time: ") + Text("\(activity.waitingTime) mins").fontWeight(.heavy)
                                     }
                                 }

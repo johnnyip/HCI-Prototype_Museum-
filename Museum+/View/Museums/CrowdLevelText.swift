@@ -25,6 +25,7 @@ struct CrowdLevelText: View {
         }else if (level == "High"){
             Text("High")
                 .padding(.horizontal,5)
+                .foregroundColor(.white)
                 .background(Color.red)
                 .cornerRadius(5)
 

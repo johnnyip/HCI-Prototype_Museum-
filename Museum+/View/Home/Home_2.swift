@@ -25,7 +25,7 @@ struct Home_2: View {
                     }
                 }
                 HStack{
-                    Text("Short Movie(20mins) - 14:50")
+                    Text("Flipbook Machine - 14:00")
                         .font(.system(size: 25))
                     Spacer()
                 }
@@ -38,7 +38,15 @@ struct Home_2: View {
             if modeSelection == 2{
 
                 HStack{
-                    Text("Current location: ").font(.system(size: 20)) + Text("Space Museum").font(.system(size: 20)).fontWeight(.heavy)
+                    NavigationLink {
+                        MuseumDetail()
+                            .navigationBarTitle("Hong Kong Science Museum")
+
+                    } label: {
+                        Text("Current location: ").font(.system(size: 20)) + Text("Space Museum").font(.system(size: 20)).fontWeight(.heavy)
+
+                    }
+
                 }
                 .padding()
                 .background(Color.init("lightGrey"))

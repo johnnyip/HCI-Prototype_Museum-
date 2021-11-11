@@ -33,21 +33,22 @@ struct Settings: View {
                     .onChange(of: new_visitedBefore) { newValue in
                         UserDefaults.standard.set(new_visitedBefore,forKey: "new_visitedBefore")
                     }
-                    Text("Visited: Exhibition 1 3")
+                    Text("Visited: Exhibition [1] [3]")
                 }
             }
             
             if (modeSelection == 1){
                 Section{
                     Text("Booked to visit Science Museum")
-                    Text("2 entrance ticket, 2 event tickets")
+                    Text("2 Entrance Ticket")
+                    Text("2 Event Ticket - Flipbook Machine")
                 }
             }
             if (modeSelection == 2){
                 Section{
                     Text("Currently in Science Museum")
                     Text("Planned to visit Exhibition 1 3")
-                    Text("Event will start at 14:50")
+                    Text("Event will start at 14:00")
                 }
             }
 

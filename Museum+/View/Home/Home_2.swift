@@ -11,7 +11,7 @@ struct Home_2: View {
     @State var modeSelection:Int = UserDefaults.standard.integer(forKey: "mode")
 
     var body: some View {
-        VStack{
+        ScrollView{
             VStack(spacing:10){
                 HStack{
                     Text("Your coming booking")
@@ -78,7 +78,7 @@ struct Home_2: View {
                 .padding(.horizontal)
                 .padding(.vertical,5)
  
-            Spacer()
+            
 
         }
         .onAppear {

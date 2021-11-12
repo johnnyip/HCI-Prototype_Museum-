@@ -28,6 +28,11 @@ struct ButtonsView: View {
                     NavigationLink {
                         MuseumMap_RoutePlanning()
                             .navigationTitle("Museum Map & Route Planning")
+                            .navigationBarItems(trailing: Button(action: {
+                                print("hi")
+                            }, label: {
+                                Image(systemName: "person.3.fill")
+                            } ))
 
                     } label: {
                         Text("Museum Map & Route Planning")
@@ -41,6 +46,11 @@ struct ButtonsView: View {
                     NavigationLink {
                         MuseumMap_Navigation()
                             .navigationTitle("Museum Map & Navigation")
+                            .navigationBarItems(trailing: Button(action: {
+                                print("hi")
+                            }, label: {
+                                Image(systemName: "person.3.fill")
+                            } ))
                     } label: {
                         Text("Museum Map & Navigation")
                             .font(.system(size: 20))
